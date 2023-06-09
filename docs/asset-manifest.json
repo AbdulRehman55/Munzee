@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/munzee-web-v2/static/css/main.6e6febec.css",
+    "main.js": "/munzee-web-v2/static/js/main.e3f18e63.js",
+    "static/js/787.28cb0dcd.chunk.js": "/munzee-web-v2/static/js/787.28cb0dcd.chunk.js",
+    "static/media/game-map.gif": "/munzee-web-v2/static/media/game-map.c459e7fc41a70284ffa3.gif",
+    "static/media/munzee-app.png": "/munzee-web-v2/static/media/munzee-app.5719b3402e89acb3a237.png",
+    "static/media/Ubuntu-Light.ttf": "/munzee-web-v2/static/media/Ubuntu-Light.0dd2d5986e2731a16ee7.ttf",
+    "static/media/Ubuntu-LightItalic.ttf": "/munzee-web-v2/static/media/Ubuntu-LightItalic.643c0a5c4ac0440c45e5.ttf",
+    "static/media/slider_item_3.png": "/munzee-web-v2/static/media/slider_item_3.56f95f0bb5c739a0b844.png",
+    "static/media/Ubuntu-RegularItalic.ttf": "/munzee-web-v2/static/media/Ubuntu-RegularItalic.fbb3310412795b02afc4.ttf",
+    "static/media/Ubuntu-MediumItalic.ttf": "/munzee-web-v2/static/media/Ubuntu-MediumItalic.d68d789a6be6e034d129.ttf",
+    "static/media/Ubuntu-Regular.ttf": "/munzee-web-v2/static/media/Ubuntu-Regular.1cbb1b79a23478cc89ad.ttf",
+    "static/media/munzee-road.jpg": "/munzee-web-v2/static/media/munzee-road.9b86f6f4fbaca928a297.jpg",
+    "static/media/Ubuntu-Medium.ttf": "/munzee-web-v2/static/media/Ubuntu-Medium.e37c5546eb1a6efc4818.ttf",
+    "static/media/Ubuntu-BoldItalic.ttf": "/munzee-web-v2/static/media/Ubuntu-BoldItalic.6fe54aaa592aa54a8c88.ttf",
+    "static/media/Ubuntu-Bold.ttf": "/munzee-web-v2/static/media/Ubuntu-Bold.fec2d0f1431a6114a6ce.ttf",
+    "static/media/slider_item_4.png": "/munzee-web-v2/static/media/slider_item_4.e960dc3640ac92c96ebd.png",
+    "static/media/slider_item_1.png": "/munzee-web-v2/static/media/slider_item_1.59a2564020d949540568.png",
+    "static/media/slider_item_2.png": "/munzee-web-v2/static/media/slider_item_2.f1a900e68647ba280c30.png",
+    "static/media/main_banner.png": "/munzee-web-v2/static/media/main_banner.8effff8ee188371addc2.png",
+    "static/media/Alegreya.ttf": "/munzee-web-v2/static/media/Alegreya.852d2d3441b86e971973.ttf",
+    "static/media/slider_header.png": "/munzee-web-v2/static/media/slider_header.e6648dd28b63758dd4dc.png",
+    "static/media/download-bg.png": "/munzee-web-v2/static/media/download-bg.aed1704b3147cf5dfbf8.png",
+    "static/media/HelveticaNeue-Light.ttf": "/munzee-web-v2/static/media/HelveticaNeue-Light.2d7491fe233df3ce53e2.ttf",
+    "static/media/HelveticaNeue-Medium.ttf": "/munzee-web-v2/static/media/HelveticaNeue-Medium.64ab5024acf8e1619abc.ttf",
+    "static/media/Helvetica-Neu-Bold.ttf": "/munzee-web-v2/static/media/Helvetica-Neu-Bold.61acdee6f288cddccf23.ttf",
+    "static/media/avatar.png": "/munzee-web-v2/static/media/avatar.ab671441823cef0e3edd.png",
+    "static/media/munzee-logo-v4-outline.png": "/munzee-web-v2/static/media/munzee-logo-v4-outline.a6ad41c9337f94213dda.png",
+    "static/media/munzee-logo-home.svg": "/munzee-web-v2/static/media/munzee-logo-home.c6762e0924a90061579c286ae037294c.svg",
+    "static/media/munzee-logo.svg": "/munzee-web-v2/static/media/munzee-logo.f10608271909265b9a613fda482f6509.svg",
+    "index.html": "/munzee-web-v2/index.html",
+    "main.6e6febec.css.map": "/munzee-web-v2/static/css/main.6e6febec.css.map",
+    "main.e3f18e63.js.map": "/munzee-web-v2/static/js/main.e3f18e63.js.map",
+    "787.28cb0dcd.chunk.js.map": "/munzee-web-v2/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e6febec.css",
+    "static/js/main.e3f18e63.js"
+  ]
+}
