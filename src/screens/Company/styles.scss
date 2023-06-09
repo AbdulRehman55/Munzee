@@ -1,0 +1,113 @@
+@import "../../utils/styles/theme_colors";
+
+#company-contact-page{
+  padding: 15px 0 96px 0;
+  .content-wrapper{
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+  }
+  .contact-text{
+    width: 975px;
+    padding: 0 15px;
+    margin-left: auto;
+    .page-title{
+      margin-bottom: 20px;
+    }
+    .inner-text{
+      display: grid;
+      grid-auto-columns: 1fr;
+      grid-auto-flow: column;
+      p{
+        padding: 0 15px;
+        font-size: 14px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        &:last-child{
+          a{
+           display: block;
+            &:first-child{
+              margin-top: 20px;
+            }
+          }
+        }
+        span{
+          &:first-child{
+            margin-top: 15px;
+          }
+          display: block;
+        }
+        a{
+          color: $green-font-color;
+          text-decoration: none;
+          transition: .2s linear;
+          &:hover{
+            color: $secondary-text-color;
+            transition: .2s linear;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+#company-about-page{
+  padding: 15px 0 96px 0;
+  .content-wrapper{
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .about-text{
+    width: 975px;
+    padding: 0 15px;
+    margin-left: auto;
+    .inner-text{
+      p{
+        padding: 0 15px;
+        font-size: 14px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin-bottom: 15px;
+      }
+      a{
+        color: $green-font-color;
+        text-decoration: none;
+        transition: .2s linear;
+        &:hover{
+          color: $secondary-text-color;
+          transition: .2s linear;
+          cursor: pointer;
+        }
+      }
+    }
+    .page-title{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+#company-team-page{
+  padding: 15px 0 96px 0;
+  .content-wrapper{
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .team-content{
+    width: 975px;
+    margin-left: auto;
+    padding: 0 15px;
+    p.description{
+      margin: 20px 0;
+      text-align: center;
+      font-size: 14px;
+      color: $secondary-text-color;
+    }
+    .team-content-wrapper{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 36px 10px;
+    }
+  }
+}

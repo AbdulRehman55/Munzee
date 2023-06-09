@@ -1,0 +1,47 @@
+@import "../../utils/styles/theme_colors";
+
+#embed-page {
+  padding: 36px 0 96px 0;
+  p.MuiTypography-root,
+  label {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+  }
+  .MuiBox-root {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    label {
+      margin-bottom: 5px;
+    }
+  }
+
+  textarea {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+  .avatar {
+    padding-top: 2px;
+    height: 45px;
+    width: 45px;
+  }
+  .user-photo {
+    height: 30px;
+    width: 30px;
+    padding-bottom: 3px;
+    padding-right: 3px;
+  }
+  .text {
+    font-family: Helvetica, Neue;
+    margin-bottom: -5px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: -1px;
+  }
+}

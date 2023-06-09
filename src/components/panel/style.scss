@@ -1,0 +1,26 @@
+@import '../../utils/styles/theme_colors';
+.panel-container {
+  padding-top: 20px;
+  .panel-heading {
+    font-family: Ubuntu, sans-serif;
+    font-size: 14px;
+    color: $primary-font-color;
+    text-align: center;
+    font-weight: 700;
+    background-color: rgba(141, 197, 62, 0.8);
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    &.light {
+      font-weight: 500;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #3c763d;
+      background-color: #dff0d8;
+      border-color: $success-alert-border-color;
+      padding: 15px;
+    }
+  }
+}

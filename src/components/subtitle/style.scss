@@ -1,0 +1,17 @@
+@import "../../utils/styles/theme_colors";
+
+.sub-title {
+  p {
+    font-size: 18px;
+    font-style: italic;
+    padding-bottom: 0px;
+    border-bottom: 1px solid $border-color;
+    font-weight: 300;
+    span {
+      color: $details-font-color;
+      font-weight: 500;
+      font-size: 14px;
+      margin-left: 14px;
+    }
+  }
+}

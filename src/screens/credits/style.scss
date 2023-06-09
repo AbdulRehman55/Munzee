@@ -1,0 +1,57 @@
+@import '../../utils/styles/theme_colors';
+.credits-screen-container {
+  padding: 20px 0px 60px;
+  ul {
+    margin-top: 50px;
+    margin-right: 25px;
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 10px;
+    li {
+      margin-bottom: 15px;
+      display: inline-block;
+      padding-right: 5px;
+      padding-left: 5px;
+      img {
+        height: 60px;
+        margin-left: 12px;
+        margin-right: 12px;
+        vertical-align: middle;
+      }
+      h3 {
+        margin-top: 8px;
+        font-weight: 600;
+        font-size: 24px;
+      }
+    }
+  }
+  .alert-container {
+    width: 90%;
+    margin: 30px auto 50px;
+  }
+  .table-area {
+    p {
+      font-style: italic;
+      font-family: sans-serif;
+      font-size: 14px;
+    }
+    table {
+      background-color: $primary-font-color;
+      width: 100%;
+      margin: 20px 0px 20px;
+      td, i {
+        padding: 8px;
+        line-height: 1.42857143;
+        vertical-align: top;
+        font-family: sans-serif;
+        font-size: 14px;
+        border-top: 1px solid #ddd;
+      }
+      i{
+        border: none;
+      }
+    }
+  }
+}

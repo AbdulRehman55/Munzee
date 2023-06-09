@@ -1,0 +1,72 @@
+@import "../../utils/styles/theme_colors";
+
+.types-card {
+  .card {
+    padding: 25px;
+    max-width: 250px;
+    margin: 0 auto;
+    height: 400px;
+    transition: background 0.2s ease-in;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+    position: relative;
+    border: 0;
+    border-radius: 4px;
+    background: $primary-font-color;
+    text-align: center;
+    &.rotate:hover {
+      background-color: $card-desc-background-color;
+      color: $primary-font-color;
+      .front {
+        display: none;
+      }
+      .back {
+        display: block;
+      }
+    }
+    .title {
+      font-size: 14px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    .front {
+      display: block;
+      img {
+        height: 85px;
+        vertical-align: middle;
+        border: 0;
+      }
+    }
+    .name {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      border-bottom: 1px solid #cbd1d6;
+      margin: 8px 0;
+      padding: 5px 0;
+    }
+    .back {
+      padding: 25px;
+      display: none;
+      .description {
+        color: $primary-font-color;
+        font-style: italic;
+        font-size: 10px;
+      }
+      hr {
+        height: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 0;
+        border-top: 1px solid #eee;
+      }
+      b,
+      strong {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: $primary-font-color;
+        font-weight: 700;
+      }
+      span {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: $secondary-text-color;
+      }
+    }
+  }
+}

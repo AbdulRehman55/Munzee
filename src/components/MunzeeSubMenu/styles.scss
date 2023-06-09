@@ -1,0 +1,106 @@
+@import "../../utils/styles/theme_colors";
+
+#sub-menu{
+  background-color: $card-desc-background-color;
+  height: 50px;
+  .sub-menu-wrapper{
+    height: 100%;
+  }
+  .navbar{
+    background: transparent !important;
+    border: none;
+    padding: 0 !important;
+    height: 100%;
+  }
+  #basic-navbar-nav{
+    border: none;
+    padding: 0;
+    height: 100%;
+    &:hover{
+      background: transparent;
+    }
+  }
+  .dropdown-toggle.nav-link{
+    color: $primary-font-color;
+    font-size: 14px;
+    height: 100%;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 !important;
+    &:hover{
+      background: $secondary-text-color;
+    }
+  }
+  .nav-item.dropdown{
+    height: 100%;
+    &.show{
+      background: $secondary-text-color;
+    }
+  }
+  .navbar-nav{
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    .menu-item{
+      padding: 0 15px;
+      display: flex;
+      height: 100%;
+      align-items: center;
+      color: $primary-font-color;
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      transition: .2s linear;
+      text-decoration: none;
+      position: relative;
+      svg{
+        fill: $primary-font-color;
+      }
+      ul{
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        background: white;
+        top: 50px;
+        list-style-type: none;
+        padding: 10px 0;
+        left: 0;
+        box-shadow: 0 6px 12px rgba(0,0,0,.175);
+        a{
+          padding: 5px 20px;
+          display: flex;
+          font-weight: 400;
+          color: $secondary-text-color;
+          text-decoration: none;
+          transition: .2s linear;
+          &:hover{
+            color: $light-green-color;
+            transition: .2s linear;
+          }
+        }
+      }
+      &.openSubItems{
+        cursor: pointer;
+        background-color: $secondary-text-color;
+        transition: .2s linear;
+        text-decoration: none;
+        ul{
+          display: flex;
+          flex-direction: column;
+          z-index: 10;
+        }
+      }
+      &.active, &:hover{
+        cursor: pointer;
+        background-color: $secondary-text-color;
+        transition: .2s linear;
+        text-decoration: none;
+      }
+    }
+  }
+}

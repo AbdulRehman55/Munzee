@@ -1,0 +1,89 @@
+@import "../../utils/styles/theme_colors";
+
+#specials-page{
+  padding: 36px 0 96px 0;
+  .places-filters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 50px 0;
+    p{
+      font-size: 14px;
+      font-weight: 700;
+      color: $secondary-text-color;
+    }
+  }
+  .page-title{
+    padding-bottom: 20px;
+    p{
+      display: flex;
+      flex-direction: column;
+      span{
+        margin: 0;
+      }
+    }
+  }
+  .icon-btn{
+    min-width: 35px;
+    filter: grayscale(100%);
+    &.show{
+      filter: none;
+    }
+    &:hover{
+      cursor: pointer;
+      background: transparent;
+    }
+    img{
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .alltypes-btn{
+    color: $secondary-text-color;
+    background-color: $primary-font-color;
+    border: 1px solid $indicator-empty;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin: 0 5px;
+    text-transform: capitalize;
+    transition: .2s linear;
+    &:hover{
+      background-color: $filter-btn-bg;
+      border-color: $filter-btn-border;
+      transition: .2s linear;
+    }
+  }
+  .captures-grid{
+    margin-bottom: 20px;
+  }
+  .captures-grid-header{
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid $table-border-color;
+  }
+  .captures-grid-rows{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    .grid-row{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px;
+      border-top: 1px solid $table-border-color;
+      img{
+        width: 32px;
+        height: 32px;
+        margin-left: 5px;
+      }
+    }
+  }
+  .tip{
+    font-style: italic;
+    font-size: 14px;
+  }
+}

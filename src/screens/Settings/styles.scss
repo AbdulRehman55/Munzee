@@ -1,0 +1,174 @@
+@import "../../utils/styles/theme_colors";
+
+#user-profile-settings{
+  @include content-wrapper;
+  padding-bottom: 96px;
+  .maplibregl-canvas-container{
+    canvas{
+      height: 400px !important;
+    }
+  }
+  .page-title{
+    padding-top: 36px;
+  }
+  .account-settings-form{
+    .option-wrapper, .selects-wrapper{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 25px 10px;
+    }
+    .option-wrapper{
+      margin: 50px 0;
+      h5{
+        font-size: 16px;
+        font-weight: 400;
+        font-style: italic;
+        margin-bottom: 12px;
+      }
+      span{
+        font-weight: 700;
+        font-size: 14px;
+      }
+      label{
+        height: 30px;
+      }
+    }
+    h4{
+      margin: 20px 0;
+    }
+  }
+  #time-zone-wrapper, #dist-type-wrapper, #deploy-notification-wrapper{
+    position: relative;
+    width: 100%;
+    & > div{
+      width: 100%;
+    }
+  }
+
+  //////////////////////////////
+  ///////* SUBMIT BUTTON *//////
+  //////////////////////////////
+
+  .btn-wrapper{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .confirm-btn{
+    @include confirm-btn;
+    img{
+      width: 20px;
+      margin-left: 5px;
+    }
+  }
+
+  ////////////////////////////////////////////
+  //////////* CHANGE PASSWORD FORM *//////////
+  ////////////////////////////////////////////
+
+  .change-pass{
+    margin-bottom: 36px;
+    .page-title{
+      margin-bottom: 36px;
+    }
+    .change-pass-wrapper{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 30% 30% 30%;
+      justify-content: space-between;
+    }
+  }
+
+  ///////////////////////////////////////
+  ////////* CHANGE PICTURE FORM *////////
+  ///////////////////////////////////////
+
+  .change-pic-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    span{
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+  }
+
+  ///////////////////////////////////////
+  ////////* CHANGE USERNAME FORM *///////
+  ///////////////////////////////////////
+
+  #change-username-form{
+    margin-bottom: 36px;
+    .change-username-wrapper{
+      margin-top: 36px;
+      display: grid;
+      grid-template-columns: 30% 40%;
+      gap: 0 30px;
+      span{
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+    .btn-wrapper{
+      width: 30%;
+      align-self: flex-start;
+      justify-content: flex-end;
+      margin-top: 20px;
+      button{
+        margin-left: 30px;
+      }
+    }
+  }
+
+  ////////////////////////////////
+  //////* MANAGE APPS FORM *//////
+  ////////////////////////////////
+
+  #manage-apps-form{
+    margin-bottom: 36px;
+    .page-title{
+      margin-bottom: 36px;
+    }
+    span{
+      font-weight: 500;
+      font-size: 14px;
+      margin: 10px 0;
+      a{
+        color: $green-font-color;
+        text-decoration: none;
+        transition: .2s linear;
+        &:hover{
+          color: $secondary-text-color;
+          transition: .2s linear;
+        }
+      }
+    }
+  }
+
+  ////////////////////////////////
+  //////* UNSUBSCRIBE FORM *//////
+  ////////////////////////////////
+
+  #unsubscribe-form, #delete-account-form{
+    .page-title{
+      margin-bottom: 36px;
+    }
+  }
+  .reject-btn{
+    font-size: 14px;
+    font-weight: 500;
+    color: $primary-font-color;
+    text-align: center;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-family: Ubuntu, sans-serif;
+    background-color: $red-btn-color;
+    border: none;
+    transition: .2s linear;
+    text-transform: capitalize;
+    &:hover{
+      cursor: pointer;
+      background-color: $error-bg-hover-color;
+      transition: .2s linear;
+    }
+  }
+}

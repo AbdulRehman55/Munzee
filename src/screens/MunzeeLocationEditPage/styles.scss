@@ -1,0 +1,51 @@
+@import "../../utils/styles/theme_colors";
+
+///////////////////////////////////////////
+/////////* UNDEPLOYS PAGE STYLES */////////
+///////////////////////////////////////////
+
+#munzee-edit-page {
+  @include content-wrapper;
+  padding: 36px 0 96px 0;
+  display: flex;
+  flex-direction: column;
+  
+  .update-btn{
+    background-color: $card-desc-background-color;
+    color: $primary-font-color;
+    text-transform: capitalize;
+    font-size: 14px;
+
+    &:hover {
+      background-color: $green-font-color;
+    }
+  }
+
+  .map-view-btn  {
+    border: 1px solid #ccc;
+    padding: 4px 6px;
+    color: #565656;
+    background-color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+    z-index: 1;
+
+    &.active {
+      font-weight: 600;
+    }
+  }
+  .satelite-btn {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    /* right: 100px; */
+  }
+  .street-btn {
+    position: absolute;
+    top: 10px;
+    left: 110px;
+    /* right: 47px; */
+  }
+    
+}
+

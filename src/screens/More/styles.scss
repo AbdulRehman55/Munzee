@@ -1,0 +1,223 @@
+@import "../../utils/styles/theme_colors";
+
+////////////////////////////////
+/* BLAST CAPTURES PAGE STYLES */
+////////////////////////////////
+
+#blast-captures-more{
+  @include content-wrapper;
+  padding-bottom: 60px;
+  .page-title{
+    margin-bottom: 30px;
+  }
+  margin-top: 40px;
+  #blast-captures-table{
+    margin-bottom: 40px;
+  }
+  table{
+    thead{
+      background: $secondary-text-color;
+      height: 37px;
+      tr{
+        th{
+          color: $primary-font-color;
+          font-weight: 600;
+          text-align: center;
+          padding: 0;
+        }
+      }
+    }
+    tbody{
+      tr{
+        th, td{
+          text-align: center;
+          font-style: italic;
+          font-weight: 500;
+          height: 37px;
+          padding: 0;
+          background-color: $primary-font-color;
+        }
+        th{
+          background-color: $more-table-cell-bg;
+        }
+      }
+    }
+  }
+  .alert-block.success{
+    .alert-link{
+      text-decoration: none;
+      color: $green-font-color;
+      font-weight: 700;
+      transition: .2s linear;
+      &:hover{
+        cursor: pointer;
+        color: $secondary-text-color;
+        transition: .2s linear;
+      }
+    }
+  }
+}
+
+///////////////////////////
+/* ZEE Q REW PAGE STYLES */
+///////////////////////////
+
+#zee-q-rew{
+  @include content-wrapper;
+  padding: 40px 0 96px 0;
+  .page-title-additional-info{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    span{
+      font-size: 24px;
+      font-style: italic;
+      padding-bottom: 5px;
+      font-weight: 200;
+      margin-left: 0;
+      color: $secondary-text-color;
+      margin-top: 36px;
+    }
+  }
+  h5{
+    font-family: Ubuntu, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .status-columns{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+    .column{
+      padding-left: 20px;
+    }
+    ul{
+      margin-left: 40px;
+      li{
+        font-family: Ubuntu, sans-serif;
+        font-size: 14px;
+        color: $secondary-text-color;
+        font-weight: 500;
+        line-height: 16px;
+        .completed{
+          color: $green-font-color;
+          font-weight: 600;
+          svg{
+            font-weight: 600;
+            fill: $green-font-color;
+            width: 20px;
+            height: 20px;
+            position: relative;
+            top: 5px;
+          }
+        }
+        .error{
+          color: $error-alert-border-color;
+          font-weight: 600;
+          svg{
+            font-weight: 600;
+            fill: $error-alert-border-color;
+            width: 20px;
+            height: 20px;
+            position: relative;
+            top: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//////////////////////////////////
+/* MAINTENANCE MODE PAGE STYLES */
+//////////////////////////////////
+
+#maintenance-mode-more{
+  @include content-wrapper;
+  padding: 36px 0 96px 0;
+  .page-title{
+    margin-bottom: 30px;
+  }
+  .alert-block{
+    margin-bottom: 40px;
+    .alert-message{
+      font-weight: 500;
+    }
+  }
+}
+
+
+///////////////////////////////
+/* PHOTO GALLERY MORE STYLES */
+///////////////////////////////
+
+#photo-gallery-more{
+  padding: 36px 0 96px 0;
+  .gallery-wrapper{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    padding: 30px 0;
+  }
+  .selected-pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img{
+      width: 400px;
+    }
+    .selected-pic-info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 15px;
+      span{
+        font-weight: 600;
+        font-size: 14px;
+        span{
+          color: $green-font-color;
+        }
+      }
+    }
+  }
+  .other-pics{
+    .items-wrapper{
+      display: grid;
+      grid-template-columns: repeat(4, 80px);
+      grid-auto-rows: 80px;
+      gap: 10px;
+      img{
+        width: 70px;
+        height: 70px;
+      }
+    }
+    .btns-wrapper{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      button{
+        background: $primary-font-color;
+        border-radius: 20px;
+        padding: 5px 15px;
+        color: $card-desc-background-color;
+        &:disabled{
+          color: $details-font-color;
+        }
+        svg{
+          width: 18px;
+        }
+        &:first-child{
+          svg{
+            margin-right: 7px;
+          }
+        }
+        &:last-child{
+          svg{
+            margin-left: 7px;
+          }
+        }
+      }
+    }
+  }
+}

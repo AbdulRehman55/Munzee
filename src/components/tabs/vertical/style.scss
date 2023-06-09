@@ -1,0 +1,27 @@
+@import '../../../utils/styles/theme_colors';
+.vertical-tabs-container {
+  padding: 22px 18px 0px 0px;
+  position: fixed;
+  p {
+    cursor: pointer;
+  }
+  p:hover {
+    color: #8dc53ecc;
+    border-left: 1px solid #8dc53ecc;
+  }
+  .unactive {
+    font-size: 13px;
+    font-weight: 400;
+    color: $secondary-text-color;
+    padding: 4px 20px;
+    font-family: HalveticaNeu;
+  }
+  .active {
+    font-size: 13px;
+    font-weight: 400;
+    color: $secondary-text-color;
+    padding: 4px 20px;
+    font-family: HalveticaNeu;
+    background-color: #4dae4c;
+  }
+}

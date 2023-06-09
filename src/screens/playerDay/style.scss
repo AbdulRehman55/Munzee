@@ -1,0 +1,46 @@
+@import "../../utils/styles/theme_colors";
+
+.player-day-wrapper {
+  padding-top: 36px;
+}
+
+.munzee-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  img{
+    width: 40px;
+    height: 40px;
+  }
+  .MuiBox-root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.captures-table-wrapper{
+  margin-bottom: 70px;
+  table{
+    width: 100%;
+    img{
+      width: 30px;
+      height: 30px;
+    }
+    td{
+      font-size: 14px;
+      text-align: start;
+      border-bottom: 1px solid $table-border-color;
+      padding: 15px 10px;
+    }
+    th{
+      font-size: 14px;
+      text-transform: capitalize;
+      border-bottom: 2px solid $table-border-color;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      padding: 15px 10px;
+    }
+  }
+}

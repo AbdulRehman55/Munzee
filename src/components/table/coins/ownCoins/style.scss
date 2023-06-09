@@ -1,0 +1,67 @@
+@import "../../../../utils/styles/theme_colors";
+.OwnCoins-table-container {
+  .table {
+    width: 100%;
+    max-width: 100%;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  .table > thead > tr > th {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: $secondary-text-color;
+    border-top: 0;
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+    padding: 8px;
+    line-height: 1.42857143;
+    text-align: left;
+  }
+  .table > tbody > tr td {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: $secondary-text-color;
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: middle;
+  }
+  .user-photo {
+    padding-top: 1px;
+    border-radius: 4px;
+    float: left;
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+  }
+  .link {
+    color: $green-font-color;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+      color: $secondary-text-color;
+    }
+  }
+  .img-text-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .icons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    .icons {
+      display: flex;
+      align-items: center;
+      padding-right: 4px;
+      .fa {
+        font-size: 18px;
+        &.fa-check-circle {
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import '../../utils/styles/theme_colors';
+.deploys-container {
+  margin-top: 50px;
+  .icons-container {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(168, 167, 167, 0.17);
+    padding-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    p {
+      padding-bottom: 2px;
+      font-size: 14px;
+      font-style: italic;
+      color: $header-menu-icon-color;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    img {
+      width: 29px;
+      margin-bottom: 10px;
+      vertical-align: middle;
+      border: 0;
+    }
+    a {
+      color: $green-font-color;
+      text-decoration: none;
+    }
+    .icon-wrapper {
+      display: inline-block;
+      float: none;
+      text-align: left;
+      width: 36px;
+      padding: 0;
+    }
+  }
+  .section-holder {
+    padding-top: 10px;
+  }
+}

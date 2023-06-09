@@ -1,0 +1,84 @@
+@import "../../utils/styles/theme_colors";
+
+.primaryButton {
+    background: $card-desc-background-color;
+    color: $primary-font-color;
+    font-family: Ubuntu,sans-serif;
+    transition: background .3s ease-in;
+    border-radius: 6px !important;
+}
+
+.primaryButton p {
+    font-family: Ubuntu,sans-serif;
+}
+
+.primaryButton:hover {
+    background: $green-font-color;
+    color: $primary-font-color;
+}
+
+.secondaryButton {
+    background: $secondary-text-color;
+    font-family: Ubuntu,sans-serif;
+    transition: background .3s ease-in;
+    border-radius: 6px !important;
+    border-color: #262626;
+    color: $primary-font-color;
+}
+
+.secondaryButton p {
+    font-family: Ubuntu,sans-serif;
+}
+
+.secondaryButton:hover {
+    background: #737373;
+    color: $primary-font-color;
+}
+
+.bluebutton {
+    color: $primary-font-color;
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background .3s ease-in;
+    border-radius: 6px !important;
+}
+
+.bluebutton p {
+    font-family: Ubuntu,sans-serif;
+}
+
+.bluebutton:hover {
+    color: $primary-font-color;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-success {
+    border-color: #4cae4c !important;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-weight: 600;
+}

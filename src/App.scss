@@ -1,0 +1,107 @@
+@use "./utils/styles/global" as global;
+
+// UBUNTU
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("./assets/fonts/ubuntu/Ubuntu-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("./assets/fonts/ubuntu/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("./assets/fonts/ubuntu/Ubuntu-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("./assets/fonts/ubuntu/Ubuntu-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("./assets/fonts/ubuntu/Ubuntu-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("./assets/fonts/ubuntu/Ubuntu-RegularItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("./assets/fonts/ubuntu/Ubuntu-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("./assets/fonts/ubuntu/Ubuntu-BoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+//HALVETICA NEU
+
+@font-face {
+  font-family: HalveticaNeu;
+  src: url("./assets/fonts/halvetica-neu/HelveticaNeue-Light.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: HalveticaNeu;
+  src: url("./assets/fonts/halvetica-neu/HelveticaNeue-Medium.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: HalveticaNeu;
+  src: url("./assets/fonts/halvetica-neu/Helvetica-Neu-Bold.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Alegerya
+
+@font-face {
+  font-family: Alegerya;
+  src: url("./assets/fonts/alegreya/Alegreya.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}

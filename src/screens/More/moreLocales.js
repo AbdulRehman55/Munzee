@@ -1,0 +1,18 @@
+export const moreLocales = {
+    blastCapturesTitle: "Blast Captures",
+    blastCapturesTableCell1: "Blast Captures Used",
+    blastCapturesTableCell2: "Number of Captures",
+    blastCapturesTableCell3: "Number of Points",
+    blastCapturesAlert: ['You can buy blast captures from our ', 'Munzee Store', ' or see how many you have on the', ' credits page.'],
+    zeeQRewTitle: "ZeeQRew/QRew Status",
+    zeeQRewCurrentStatus: "Current Status",
+    zeeQRewCurrentTimeframe: "Current Timeframe",
+    zeeQRewRequirements1: "ZeeQRew Requirements",
+    zeeQRewRequirements2: "QRew Requirements",
+    maintenanceModeTitle: "Maintenance Mode Munzees",
+    maintenanceModeDetails: "You may replace or archive them",
+    maintenanceModeTitle2: "Soft Maintenance Mode Munzees",
+    maintenanceModeDetails2: "You better check them",
+    photoGalleryTitle: "Photo Gallery",
+    photoGalleryAlert: " did not add any photos yet",
+}

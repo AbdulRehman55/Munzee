@@ -1,0 +1,54 @@
+@import "../../utils/styles/theme_colors";
+
+.Types-container {
+  padding-top: 1px;
+  padding-bottom: 20px;
+  .types-header {
+    padding-bottom: 30px;
+    position: relative;
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    border-color: $border-color;
+
+    h2 {
+      font-size: 30px;
+      font-family: Ubuntu, sans-serif;
+      text-align: center;
+      font-weight: 200;
+      font-style: italic;
+      small {
+        font-weight: 400;
+        line-height: 1;
+        color: $grey;
+        font-size: 65%;
+        position: relative;
+        top: -10px;
+      }
+    }
+  }
+
+  .page-container {
+    .MuiInput-underline,
+    .MuiSelect-root {
+      font-weight: 700;
+      padding: 15px;
+      &::before {
+        border-bottom: 1px solid #ffb800;
+      }
+      &::after {
+        border-bottom: 2px solid #ffb800;
+      }
+
+      &:hover &::before {
+        border-bottom: 2px solid #ffb800;
+      }
+      :focus {
+        background-color: transparent;
+      }
+    }
+    .active-item {
+      border-left: 4px solid #ffb800;
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+  }
+}

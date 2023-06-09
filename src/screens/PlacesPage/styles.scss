@@ -1,0 +1,58 @@
+@import "../../utils/styles/theme_colors";
+
+#places-page{
+  padding-top: 36px;
+  .places-filters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 50px 0;
+    p{
+      font-size: 14px;
+      font-weight: 700;
+      color: $secondary-text-color;
+    }
+  }
+  .page-title{
+    padding-bottom: 20px;
+    p{
+      display: flex;
+      flex-direction: column;
+      span{
+        margin: 0;
+      }
+    }
+  }
+  .icon-btn{
+    min-width: 35px;
+    filter: grayscale(100%);
+    &.show{
+      filter: none;
+    }
+    &:hover{
+      cursor: pointer;
+      background: transparent;
+    }
+    img{
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .alltypes-btn, .captured-btn{
+    color: $secondary-text-color;
+    background-color: $primary-font-color;
+    border: 1px solid $indicator-empty;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin: 0 5px;
+    text-transform: capitalize;
+    transition: .2s linear;
+    &:hover{
+      background-color: $filter-btn-bg;
+      border-color: $filter-btn-border;
+      transition: .2s linear;
+    }
+  }
+}

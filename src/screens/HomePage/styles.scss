@@ -1,0 +1,130 @@
+@import "../../utils/styles/theme_colors";
+
+#home_page_content{
+  background-color: $light-background-color;
+  padding-bottom: 40px;
+  .available-info-line-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content-wrapper{
+    @include content-wrapper;
+  }
+  .main-banner{
+    background-color: #10412A;
+    .main-banner-wrapper{
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .available-info-line{
+    height: 46px;
+    width: 100%;
+    background-color: $light-green-color;
+    font-size: 24px;
+    font-weight: 700;
+    color: $primary-font-color;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -6px;
+    span{
+      color: $primary-font-color;
+    }
+    .available_links{
+      display: flex;
+      align-items: center;
+      a{
+        margin: 0 5px;
+        svg{
+          fill: $primary-font-color;
+        }
+      }
+      span{
+        margin-right: 5px;
+      }
+    }
+  }
+  h3{
+    font-size: 48px;
+    text-transform: uppercase;
+    margin: 20px 0 10px 0;
+    text-align: center;
+  }
+  .desc_1{
+    color: $dark-green-color;
+    font-size: 24px;
+    font-style: italic;
+    margin: 10px 0 20px 0;
+    text-align: center;
+    font-weight: 700;
+  }
+  .desc_2{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .desc_3{
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: center;
+    a{
+      font-weight: 700;
+      color: $dark-green-color;
+      text-decoration: none;
+    }
+  }
+  .desc_4{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 0;
+    span{
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+  .inner-wrapper{
+    @include inner-wrapper;
+  }
+  .buttons-wrapper{
+    display: flex;
+    justify-content: center;
+    button{
+      margin: 0 2px;
+      color: $primary-font-color;
+      border-radius: 5px;
+      height: 44px;
+      font-size: 18px;
+      text-transform: capitalize;
+      font-weight: 500;
+      padding: 14px;
+      &.download-button-content{
+        background-color: $light-green-color;
+      }
+      &.login-button-content{
+        background-color: $dark-green-color;
+      }
+    }
+  }
+  .whats_new_wrapper{
+    img{
+      width: 100%;
+      height: 350px;
+    }
+    .whats_new_slider{
+      margin-top: -6px;
+    }
+  }
+  .MuiContainer-root.MuiContainer-maxWidthLg.css-1oqqzyl-MuiContainer-root{
+    padding: 0 !important;
+  }
+  .video-wrapper{
+    iframe{
+      width: 100%;
+      height: 530px;
+    }
+  }
+}

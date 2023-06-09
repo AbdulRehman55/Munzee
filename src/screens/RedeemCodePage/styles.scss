@@ -1,0 +1,67 @@
+@import "../../utils/styles/theme_colors";
+
+////////////////////////////////////
+////////* REDEEM CODE PAGE *////////
+////////////////////////////////////
+
+#redeem-code-page {
+  padding-bottom: 96px;
+  .page-title {
+    padding-top: 36px;
+    p {
+      color: $dark-green-color;
+    }
+  }
+  .redeem-tabs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    .page-title {
+      padding: 10px 0 20px 0;
+      p {
+        color: $secondary-text-color;
+        font-weight: 600;
+      }
+    }
+  }
+  .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: $light-green-color;
+  }
+  .css-1aquho2-MuiTabs-indicator {
+    background-color: $light-green-color;
+  }
+  .css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+    background: transparent;
+  }
+  table {
+    th {
+      font-weight: 600;
+    }
+    input {
+      height: 26px;
+    }
+    td {
+      .cell-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &.right {
+          align-items: flex-end;
+        }
+      }
+      img {
+        width: 100px;
+        margin-bottom: 10px;
+      }
+      .confirm-btn {
+        @include confirm-btn;
+        margin-bottom: 20px;
+      }
+      .reject-btn {
+        @include confirm-btn;
+        margin-bottom: 20px;
+        background-color: $red-btn-color;
+      }
+    }
+  }
+}

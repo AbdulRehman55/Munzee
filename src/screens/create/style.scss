@@ -1,0 +1,44 @@
+@import '../../utils/styles/theme_colors';
+.create-screen-container {
+  padding: 20px 0px 100px;
+  .form-area {
+    padding: 20px 0px;
+    .form {
+      width: 100%;
+      padding-top: 0px;
+      padding-left: 50px;
+      .form-group {
+        margin-bottom: 15px;
+        display: flex;
+      }
+      label {
+        margin-bottom: 5px;
+        font-weight: 600;
+        font-size: 14px;
+        font-family: HalveticaNeu;
+        width: 150px;
+        text-align: right;
+        padding-right: 30px;
+      }
+      input, select, textarea {
+        width: 100%;
+        background: none;
+        border: none;
+        background: $primary-font-color;
+        padding: 6px 12px;
+        line-height: 1.42857143;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        font-family: HalveticaNeu;
+        outline: none;
+      }
+      .submit-btn {
+        margin-top: 40px;
+        width: 122px;
+        margin-left: auto;
+      }
+    }
+  }
+}

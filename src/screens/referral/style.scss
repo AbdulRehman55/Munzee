@@ -1,0 +1,41 @@
+@import "../../utils/styles/theme_colors";
+.referral-container {
+  padding-top: 15px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: $secondary-text-color;
+  #qrcode {
+    padding-bottom: 5px;
+  }
+  .text-center {
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .paragraph {
+    padding: 0 15px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .panel-box {
+    background: 0;
+    margin-bottom: 60px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    padding-bottom: 10px;
+    i {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+  }
+  .user-photo {
+    border: 2px solid $primary-font-color;
+    border-radius: 100%;
+    height: 44px;
+    margin: 6px 4px;
+    width: 44px;
+    vertical-align: middle;
+  }
+  .center{
+    text-align: center;
+  }
+}

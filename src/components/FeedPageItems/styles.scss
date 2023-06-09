@@ -1,0 +1,288 @@
+@import "../../utils/styles/theme_colors";
+
+/* ACTIVITY FEED ITEM STYLES */
+
+.activity-feed-item{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  width: 100%;
+  height: 64px;
+  background-color: $feed-item-bg;
+  border-radius: 4px;
+  margin: 20px 0;
+  overflow: hidden;
+  .info-block{
+    display: flex;
+    img{
+      width: 64px;
+    }
+    .info-wrapper{
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      font-weight: 500;
+      margin: 5px 10px;
+      span{
+        display: flex;
+        align-items: center;
+        span{
+          color: $green-font-color;
+          margin-right: 7px;
+        }
+        svg{
+          fill: $green-font-color;
+        }
+        a {
+          color: $green-font-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .right-side{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    a {
+      text-decoration: none;
+    }
+  }
+  .type-block{
+    display: flex;
+    align-items: center;
+    img{
+      margin-right: 20px;
+      height: 45px;
+    }
+    span{
+      color: $green-font-color;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+  .points-block{
+    background-color: $card-desc-background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-family: Ubuntu, sans-serif;
+    height: 100%;
+    width: 64px;
+    span{
+      color: $primary-font-color;
+    }
+  }
+}
+
+.entry-holder {
+  display: flex;
+  margin-bottom: 10px;
+  img{
+    width: 64px;
+    height: 64px;
+  }
+  .comment-wrapper, .photos-wrapper{
+    background: $feed-item-bg;
+    border-radius: 3px;
+    padding: 15px;
+    flex-grow: 1;
+    margin: 10px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 30px;
+    &:after {
+      right: 100%;
+      top: 30%;
+      border: 8px solid transparent;
+      content: "";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-right-color: $feed-item-bg;
+      margin-top: -10px;
+    }
+    .user-name{
+      font-weight: 600;
+      font-size: 14px;
+      color: $green-font-color;
+      display: flex;
+      align-items: center;
+      svg{
+        width: 15px;
+        height: 15px;
+        fill: $green-font-color;
+        margin-right: 5px;
+      }
+      span{
+        margin-left: 5px;
+      }
+    }
+    .user-comment{
+      font-weight: 600;
+      font-size: 14px;
+      span{
+        font-weight: 400;
+        font-style: italic;
+      }
+    }
+    .user-reply{
+      font-weight: 600;
+      font-size: 14px;
+      color: $green-font-color;
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+      img{
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+      }
+    }
+    .time{
+      position: absolute;
+      padding: 5px 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: -4px;
+      bottom: -4px;
+      color: $primary-font-color;
+      background: lightgray;
+      font-style: italic;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 5px;
+    }
+  }
+}
+
+/* ENTRIES FEED ITEM STYLES */
+
+.entries-feed-item, .photos-feed-item{
+  display: flex;
+  margin-bottom: 10px;
+  a {
+    text-decoration: none;
+    color: $green-font-color;
+  }
+  img{
+    width: 64px;
+    height: 64px;
+  }
+  .comment-wrapper, .photos-wrapper{
+    background: $feed-item-bg;
+    border-radius: 3px;
+    padding: 15px;
+    flex-grow: 1;
+    margin: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 30px;
+    &:after {
+      right: 100%;
+      top: 30%;
+      border: 8px solid transparent;
+      content: "";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-right-color: $feed-item-bg;
+      margin-top: -10px;
+    }
+    .user-name{
+      font-weight: 600;
+      font-size: 14px;
+      color: $green-font-color;
+      display: flex;
+      align-items: center;
+      svg{
+        width: 15px;
+        height: 15px;
+        fill: $green-font-color;
+        margin-right: 5px;
+      }
+      span{
+        margin-left: 5px;
+      }
+    }
+    .user-comment{
+      font-weight: 600;
+      font-size: 14px;
+      span{
+        font-weight: 400;
+        font-style: italic;
+      }
+      .label {
+        display: inline;
+        padding: .2em .6em .3em;
+        font-size: 75%;
+        font-weight: 700;
+        line-height: 1;
+        color: $primary-font-color;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: .25em;
+        i {
+          color: $primary-font-color;
+        }
+      }
+      .label-danger {
+        background-color: $red-btn-color;
+      }
+    }
+    .user-reply{
+      font-weight: 600;
+      font-size: 14px;
+      color: $green-font-color;
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+      img{
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+      }
+    }
+    .time{
+      position: absolute;
+      padding: 5px 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: -4px;
+      bottom: -4px;
+      color: $primary-font-color;
+      background: lightgray;
+      font-style: italic;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 5px;
+    }
+  }
+}
+
+/* PHOTOS FEED ITEM STYLES */
+
+.photos-feed-item{
+  margin-bottom: 30px;
+  .photos-wrapper{
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    &:after{
+      top: 50%;
+    }
+    & > img{
+      margin-left: 10px;
+    }
+  }
+}
+

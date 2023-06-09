@@ -1,0 +1,283 @@
+@import "../../utils/styles/theme_colors";
+
+////////////////////////////////////////////
+//////////* VIEW MESSAGES styles *//////////
+////////////////////////////////////////////
+
+#view-messages-page{
+  .title-block{
+    background: url("../../assets/images/download-bg.png");
+    height: 73px;
+    width: 100%;
+    h2{
+      font-family: Ubuntu,sans-serif;
+      font-weight: 600;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    .title-wrapper{
+      @include content-wrapper;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: row;
+      height: 100%;
+    }
+  }
+  .tabs-block{
+    width: 100%;
+    height: 50px;
+    background-color: $card-desc-background-color;
+    .MuiTabs-flexContainer{
+      @include content-wrapper;
+      display: flex;
+      align-items: center;
+    }
+    button{
+      color: $primary-font-color;
+      text-transform: capitalize;
+      font-size: 14px;
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      transition: .2s linear;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      min-height: 50px;
+      svg{
+        fill: $primary-font-color;
+        margin-bottom: 0;
+        margin-right: 5px;
+      }
+      &.Mui-selected{
+        background-color: $secondary-text-color;
+        transition: .2s linear;
+      }
+    }
+    .MuiTabs-indicator{
+      display: none;
+      height: 0;
+    }
+  }
+  .tab-panel{
+    @include content-wrapper;
+  }
+  .all-tab{
+    form{
+      display: flex;
+      flex-direction: column;
+      padding-top: 36px;
+      .input-block{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .input-wrapper{
+        padding: 0 15px;
+      }
+      label{
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        color: $secondary-text-color;
+        font-weight: 700;
+        text-transform: capitalize;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        display: flex;
+      }
+      input, textarea{
+        display: flex;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        color: $input-font-color;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+      }
+      input{
+        width: 182px;
+        height: 34px;
+      }
+      textarea{
+        width: 825px;
+        height: 54px;
+      }
+      .send-btn{
+        margin-left: auto;
+        margin-right: 15px;
+        margin-top: 20px;
+        @include confirm-btn;
+      }
+    }
+  }
+}
+
+///////////////////////////////////////////////
+///////////* MESSAGES TABLE styles *///////////
+///////////////////////////////////////////////
+
+.table{
+  padding-bottom: 96px;
+}
+.table-head, .table-row{
+  display: grid;
+  grid-template-columns: 15% 40% 50%;
+}
+
+.table-row{
+  border-bottom: 1px solid $table-border-color;
+  svg{
+    fill: $green-font-color;
+    font-size: 16px;
+  }
+}
+
+.table-head{
+  border-top: 1px solid $table-border-color;
+  border-bottom: 1px solid $table-border-color;
+  span{
+    height: 37px;
+    display: inline-flex;
+    align-items: center;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: $secondary-text-color;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+}
+
+.table-body{
+  display: flex;
+  flex-direction: column;
+  span, a{
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+  }
+  a{
+    color: $green-font-color;
+    text-decoration: none;
+  }
+  img{
+    margin: -4px 0 0 -7px;
+    border-radius: 4px;
+    border: 2px solid #FFF;
+    max-width: 40px;
+    height: 36px;
+    width: 36px;
+    margin-right: 5px;
+  }
+  span{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: $secondary-text-color;
+    &.msg-text{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      span{
+        font-style: italic;
+        color: $gray-font-color;
+        height: auto;
+      }
+    }
+  }
+}
+
+
+///////////////////////////////////////////////
+///////////* CHAT PANEL styles *///////////
+///////////////////////////////////////////////
+
+#chat-panel{
+  .chat-panel-wrapper{
+    @include content-wrapper;
+  }
+  form{
+    width: 730px;
+    margin: 0 auto;
+    textarea{
+      width: 100%;
+      height: 74px;
+      display: flex;
+      padding: 6px 12px;
+      font-size: 14px;
+      color: $input-font-color;
+      background-color: $primary-font-color;
+      background-image: none;
+      border: 1px solid $table-border-color;
+      border-radius: 4px;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+  }
+
+  .btns-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  .mark-unread-btn, .send-btn{
+    @include confirm-btn;
+  }
+  .archive-btn{
+    @include reject-btn;
+    margin-left: 10px;
+  }
+
+  .msg-row{
+    display: flex;
+    align-items: center;
+    width: 760px;
+    margin: 0 auto 20px auto;
+    p{
+      width: 665px;
+      padding: 15px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      span{
+        font-style: italic;
+        color: #737373;
+        font-size: 12px;
+      }
+    }
+    img{
+      width: 64px;
+      height: 64px;
+      border-radius: 4px;
+    }
+    &.me{
+      p{
+        color: $msg-yellow-font;
+        background-color: $msg-yellow-bg;
+        border-color: $msg-yellow-border;
+      }
+      img{
+        margin-left: 20px;
+      }
+    }
+    &.user{
+      flex-direction: row-reverse;
+      img{
+        margin-right: 20px;
+      }
+      p{
+        color: $msg-blue-font;
+        background-color: $msg-blue-bg;
+        border-color: $msg-blue-border;
+      }
+    }
+  }
+
+
+
+
+}
+

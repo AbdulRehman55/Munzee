@@ -1,0 +1,14 @@
+@import "../../utils/styles/theme_colors";
+
+////////////////////////////////////////////////////
+///////////* EVENT INDICATOR MAP styles *///////////
+////////////////////////////////////////////////////
+
+#event-indicator-map{
+  @include content-wrapper;
+  padding-bottom: 96px;
+  .page-title{
+    padding-top: 36px;
+    margin-bottom: 30px;
+  }
+}

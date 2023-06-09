@@ -1,0 +1,15 @@
+@import "../../utils/styles/theme_colors";
+
+#gardens-page{
+  padding: 36px 0 96px 0;
+  .page-title{
+    padding-bottom: 20px;
+    p{
+      display: flex;
+      flex-direction: column;
+      span{
+        margin: 0;
+      }
+    }
+  }
+}

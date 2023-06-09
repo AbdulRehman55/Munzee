@@ -1,0 +1,85 @@
+@import "../../../utils/styles/theme_colors";
+
+.clan-table-container {
+  background: 0 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  .board-title {
+    font-family: Ubuntu, sans-serif;
+    font-size: 14px;
+    color: $primary-font-color;
+    text-align: center;
+    font-weight: 700;
+    background-color: $secondary-text-color;
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  .table-wrapper {
+    padding: 15px;
+  }
+  .table {
+    width: 100%;
+    max-width: 100%;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  .table > thead > tr > th {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: $secondary-text-color;
+    border-top: 0;
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+    padding: 8px;
+    line-height: 1.42857143;
+    text-align: center;
+    &:nth-child(3) {
+      width: 500px;
+    }
+  }
+  .table > tbody > tr td {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: $secondary-text-color;
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .user-photo {
+    float: left;
+    border: 2px solid $primary-font-color;
+    margin: 10px 8px 0 -7px;
+    border-radius: 4px;
+    margin-left: 27px;
+    width: 42px;
+    height: 42px;
+    img {
+      vertical-align: middle;
+    }
+  }
+  p {
+    color: $details-font-color;
+    font-family: Ubuntu, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  a {
+    color: $green-font-color;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+      color: $secondary-text-color;
+    }
+  }
+}

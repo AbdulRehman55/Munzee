@@ -1,0 +1,11 @@
+@import "../../utils/styles/theme_colors";
+
+#activity-feed, #entries-feed, #photos-feed{
+  padding: 40px 0;
+  .content-wrapper{
+    @include content-wrapper;
+    .items-list{
+      margin: 30px 0 50px;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@import "../../../utils/styles/theme_colors";
+
+.geocoder-container {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  z-index: 1;
+  min-width: 1000px;
+  .mapboxgl-ctrl {
+    display: flex;
+    border-radius: 0 0 3px 0;
+    .geocoder-clear-button {
+      background-color: $primary-font-color;
+      z-index: 2;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      padding: 0;
+      margin: 0;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
+}
+.mapboxgl-ctrl-geocoder--icon {
+  display: none;
+}
+.mapboxgl-ctrl-geocoder--input {
+  font-size: 12px;
+  width: 100%;
+  border: 0;
+  background-color: transparent;
+  height: 40px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 10px 40px 10px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0;
+  &:focus {
+    outline: none;
+  }
+}
+.btn {
+  &.locate-me {
+    color: $primary-font-color;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    left: 375px;
+    width: 100px;
+    height: 39px;
+    padding: 10px 0 11px;
+    position: absolute;
+    z-index: 4;
+    top: 2.7%;
+    &:hover {
+      color: $primary-font-color;
+      background-color: #47a447;
+      border-color: #398439;
+    }
+  }
+}

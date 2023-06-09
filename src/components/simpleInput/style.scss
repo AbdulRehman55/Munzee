@@ -1,0 +1,27 @@
+.simple-input-container {
+  padding-bottom: 2px;
+  p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-style: italic;
+    color: #777;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  input[type="text"] {
+    margin-left: 10px;
+    padding: 3px 2px;
+    font-size: 14px;
+    font-style: italic;
+    color: #777;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  input[type="button"] {
+    margin-left: 10px;
+    padding: 3px 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-style: italic;
+    color: #777;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}

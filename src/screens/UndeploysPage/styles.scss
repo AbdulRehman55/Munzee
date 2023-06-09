@@ -1,0 +1,143 @@
+@import "../../utils/styles/theme_colors";
+
+///////////////////////////////////////////
+/////////* UNDEPLOYS PAGE STYLES */////////
+///////////////////////////////////////////
+
+#undelpoys-page{
+  @include content-wrapper;
+  padding: 36px 0 96px 0;
+  display: flex;
+  flex-direction: column;
+  .btns-wrapper{
+    @include pagination-btns-wrapper;
+    .print-btn{
+      color: $secondary-text-color;
+      text-transform: capitalize;
+      font-weight: 600;
+      font-style: italic;
+      font-size: 16px;
+      svg{
+        font-size: 20px;
+        margin-right: 7px;
+      }
+    }
+  }
+  .never-captured{
+    font-weight: 600;
+    font-style: italic;
+    text-transform: capitalize;
+  }
+  .create-btn{
+    @include confirm-btn;
+    text-decoration: none;
+    margin-left: auto;
+  }
+}
+
+
+///////////////////////////////////////////
+/////////* UNDEPLOYS ITEM STYLES */////////
+///////////////////////////////////////////
+
+.undeploys-item{
+  display: grid;
+  grid-template-columns: 20% 20% 60%;
+  width: 100%;
+  background-color: $feed-item-bg;
+  border-radius: 4px;
+  margin: 20px 0;
+  overflow: hidden;
+  padding: 5px 0;
+  position: relative;
+  align-items: center;
+  img{
+    width: 64px;
+    height: 64px;
+  }
+  .last-captured{
+    display: flex;
+    align-items: center;
+    img{
+      background: $primary-font-color;
+    }
+    p{
+      margin: 0 15px;
+    }
+  }
+  .details{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  a{
+    color: $green-font-color;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .title{
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+///////////////////////////////////////////
+/////////* SEARCH TYPES STYLES *///////////
+///////////////////////////////////////////
+
+#search-types{
+  background-color: $feed-item-bg;
+  border-radius: 4px;
+  padding: 20px 15px 10px 15px;
+  margin-top: 30px;
+  span{
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+    display: block;
+    color: $header-menu-icon-color;
+  }
+  .search-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 20px 0;
+    span{
+      display: inline-flex;
+      margin-right: 10px;
+    }
+    label{
+      font-size: 14px;
+    }
+    .Mui-focused{
+      color: $green-font-color;
+    }
+    .css-1ff8729-MuiInputBase-root-MuiFilledInput-root:after{
+      border-color: $green-font-color;
+    }
+    .go-btn{
+      @include confirm-btn;
+      text-transform: uppercase;
+      margin-left: 15px;
+    }
+  }
+  .munzee-icons{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: center;
+    img{
+      width: 29px;
+      height: 29px;
+    }
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+    }
+  }
+}

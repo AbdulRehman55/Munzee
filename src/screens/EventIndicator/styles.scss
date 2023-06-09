@@ -1,0 +1,189 @@
+@import "../../utils/styles/theme_colors";
+
+///////////////////////////////////////////////////
+//////////* EVENT INDICATOR page styles *//////////
+///////////////////////////////////////////////////
+
+#event-indicator-page{
+  padding: 20px 0 96px 0;
+
+  /////////////////////////////////////////////////////
+  /////////* PANELS deployments and captures */////////
+  /////////////////////////////////////////////////////
+
+  .panels-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    .panel{
+      display: flex;
+      flex-direction: column;
+      padding: 0 15px;
+      flex-grow: 1;
+      margin-bottom: 20px;
+      .panel-heading{
+        width: 100%;
+        padding: 10px 15px;
+        border-bottom: 1px solid transparent;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        font-family: Ubuntu,sans-serif;
+        color: $primary-font-color;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $secondary-text-color;
+      }
+      .panel-content{
+        padding: 15px 20px;
+        background-color: $primary-font-color;
+        border: 1px solid $table-border-color;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+        box-shadow: 0 1px 1px rgba(0,0,0,.05);
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////
+////////////* RECENT STREAK ACTIVITY styles *////////////
+/////////////////////////////////////////////////////////
+
+.event-indicator-wrapper{
+  @include content-wrapper;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $table-border-color;
+  h4{
+    font-family: Ubuntu,sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .recent-streak-activity{
+    .info{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span, p{
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 10px;
+        color: $secondary-text-color;
+      }
+      p{
+        display: flex;
+        align-items: center;
+      }
+    }
+    .days{
+      display: flex;
+      height: 20px;
+      padding: 4px 0;
+      gap: 2px;
+      .day-activity{
+        height: 10px;
+        flex-grow: 1;
+        background-color: $indicator-empty;
+        min-width: 0;
+        border-radius: 0;
+        &:hover{
+          cursor: pointer;
+        }
+        &.deployed{
+          background-color: $indicator-deploy;
+        }
+        &.captured{
+          background-color: $indicator-capture;
+        }
+        &.captured.deployed{
+          background: -webkit-linear-gradient(left, $indicator-deploy, $indicator-deploy 50%, $indicator-capture 50%, $indicator-capture);
+        }
+      }
+    }
+    span.color-indicator{
+      width: 10px;
+      height: 10px;
+      display: inline-flex;
+      margin-right: 5px;
+      margin-left: 8px;
+      &.orange{
+        background-color: $indicator-deploy;
+      }
+      &.green{
+        background-color: $indicator-capture;
+      }
+      &.orange-green{
+        background: -webkit-linear-gradient(left, $indicator-deploy, $indicator-deploy 50%, $indicator-capture 50%, $indicator-capture);
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////////
+//////////////* PANEL ITEM styles *//////////////
+/////////////////////////////////////////////////
+
+.panel-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid $table-border-color;
+  padding: 8px 0;
+  .icon{
+    margin-right: 16px;
+  }
+  img{
+    width: 51px;
+    height: 51px;
+  }
+  .info{
+    display: flex;
+    p{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    a{
+      color: $green-font-color;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    span{
+      font-size: 14px;
+      color: $secondary-text-color;
+    }
+  }
+  .points{
+    background: $green-font-color;
+    color: $primary-font-color;
+    border-radius: 8px;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1em;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid $primary-font-color;
+    display: flex;
+    flex-direction: column;
+    min-width: 95px;
+    &:hover{
+      text-decoration: none;
+    }
+    span{
+      color: $primary-font-color;
+      font-family: Ubuntu, sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 1em;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+
+}
+
+
+

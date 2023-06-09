@@ -1,0 +1,125 @@
+$primary-font-color: #fff;
+$secondary-text-color: #333;
+$light-green-color: #00944a;
+$green-font-color: #016930;
+$dark-green-color: #005038;
+$light-background-color: #e9eaed;
+$border-color: rgba(190,190,190,.7);
+$card-desc-background-color: rgba(141, 197, 62, .8);
+$red-btn-color: #dc3545;
+$grey: #999;
+$details-font-color: #999;
+$feed-item-bg: rgba(168,167,167,.17);
+$more-table-cell-bg: rgba(234,244,219,.47);
+$success-alert-bg-color: #dff0d8;
+$success-alert-border-color: #d6e9c6;
+$success-alert-text-color: #3c763d;
+$error-alert-bg-color: #f2dede;
+$error-alert-border-color: #ebccd1;
+$error-alert-text-color: #a94442;
+$error-bg-hover-color: #c82333;
+$header-menu-icon-color: #777;
+$checkbox-input-color: #1976d2;
+$light-grey-bg: #f5f5f5;
+$input-font-color: #555;
+$table-border-color: #ddd;
+$gray-font-color: #737373;
+$msg-yellow-bg: #fcf8e3;
+$msg-yellow-border: #faebcc;
+$msg-yellow-font: #8a6d3b;
+$msg-blue-bg: #d9edf7;
+$msg-blue-border: #bce8f1;
+$msg-blue-font: #31708f;
+$indicator-deploy: #CF710E;
+$indicator-capture: #056102;
+$indicator-empty: #ccc;
+$badge-bg-color: #82af6f;
+$light-bg-color: #f7f7f7;
+$filter-btn-bg: #ebebeb;
+$filter-btn-border: #adadad;
+$submenu-bg: #225538;
+$submenu-arrow-color: #FFB800;
+$home-header-menu-arrow-color: #5ABB57;
+$statzee-maintext-color: #394d47;
+$statzee-subtext-color: #737373;
+
+/* MIXINS */
+@mixin content-wrapper {
+  width: 1170px !important;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@mixin inner-wrapper{
+  width: 975px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@mixin confirm-btn {
+  font-size: 14px;
+  font-weight: 500;
+  color: $primary-font-color;
+  text-align: center;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-family: Ubuntu, sans-serif;
+  background-color: $card-desc-background-color;
+  border: none;
+  transition: .2s linear;
+  text-transform: capitalize;
+  &:hover{
+    cursor: pointer;
+    background-color: $green-font-color;
+    transition: .2s linear;
+  }
+}
+
+@mixin reject-btn {
+  font-size: 14px;
+  font-weight: 500;
+  color: $primary-font-color;
+  text-align: center;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-family: Ubuntu, sans-serif;
+  background-color: $red-btn-color;
+  border: none;
+  transition: .2s linear;
+  text-transform: capitalize;
+  &:hover{
+    cursor: pointer;
+    background-color: $error-bg-hover-color;
+    transition: .2s linear;
+  }
+}
+
+@mixin pagination-btns-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 80%;
+  button{
+    background: #fff;
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: $card-desc-background-color;
+    &:disabled{
+      color: $details-font-color;
+    }
+    svg{
+      width: 18px;
+    }
+    &:first-child{
+      svg{
+        margin-right: 7px;
+      }
+    }
+    &:last-child{
+      svg{
+        margin-left: 7px;
+      }
+    }
+  }
+}

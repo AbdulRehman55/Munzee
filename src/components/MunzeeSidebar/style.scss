@@ -1,0 +1,44 @@
+@import "../../utils/styles/theme_colors";
+
+.sidebar {
+    // margin-top: 59px;
+
+    a {
+        text-decoration: none;
+        color: $green-font-color;
+    }
+
+    .ftc {
+        width: 50px;
+        margin: 0 auto;
+        word-break: break-all;
+
+        .user-photo {
+            margin: 10px 8px 0 -7px;
+            border-radius: 4px;
+            float: left;
+            border: 2px solid $primary-font-color;
+            width: 64px;
+            height: 64px;
+        }
+    }
+
+    .update-btn {
+        background-color: $card-desc-background-color;
+        color: $primary-font-color;
+        text-transform: capitalize;
+        font-size: 14px;
+
+        margin-bottom: 10px;
+        padding: 6px 12px;
+
+        &:hover {
+            background-color: $green-font-color;
+        }
+
+        i {
+            color: $primary-font-color;
+            padding-right: 5px;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+@import '../../../utils/styles/theme_colors';
+.coins-table-container {
+  .table {
+    width: 100%;
+    max-width: 100%;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  .table > thead > tr > th {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: $secondary-text-color;
+    border-top: 0;
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+    padding: 8px;
+    line-height: 1.42857143;
+    text-align: left;
+  }
+  .table > tbody > tr td {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: $secondary-text-color;
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+  }
+  .user-photo {
+    height: 42px;
+    margin-right: 10px;
+  }
+  a {
+    color: $green-font-color;
+    text-decoration: none;
+    background: 0 0;
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+      color: $secondary-text-color;
+    }
+  }
+  img {
+    vertical-align: middle;
+    border: 0;
+  }
+}

@@ -1,0 +1,74 @@
+@import "../../utils/styles/theme_colors";
+
+///////////////////////////////////////////
+/////////* UNDEPLOYS PAGE STYLES */////////
+///////////////////////////////////////////
+
+#munzee-convert-page {
+  @include content-wrapper;
+  padding: 36px 0 96px 0;
+  display: flex;
+  flex-direction: column;  
+  
+  .update-btn{
+    background-color: $card-desc-background-color;
+    color: $primary-font-color;
+    text-transform: capitalize;
+    font-size: 14px;
+
+    &:hover {
+      background-color: $green-font-color;
+    }
+  }
+
+  .pin-grid {
+    &.gray {
+      filter: grayscale(100%);
+    }    
+  }
+  .pin-image {
+    max-width: 100%;
+    width: 44px;
+  }
+  .convert-count {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    &.active {
+      color: $green-font-color;
+      cursor: pointer;
+      &:hover {
+        color: $secondary-text-color;
+      }
+    }
+  }
+
+  .credit-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Ubuntu, sans-serif;
+  }
+
+  .no-options {
+    text-align: center;
+    font-style: italic;
+    font-family: Ubuntu,sans-serif;
+    font-size: 14px;
+    margin-top: 2px;
+  }
+  
+}
+
+.pin-tooltip {
+  font-size: 12px !important;
+  background-color: #000 !important;
+  text-transform: capitalize;
+}
+.pin-tooltip .MuiTooltip-arrow {
+  color: #000 !important;
+}

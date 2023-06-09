@@ -1,0 +1,61 @@
+@import "../../utils/styles/theme_colors";
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  p,
+  b {
+    font-size: 14px;
+    font-family: sans-serif;
+  }
+  b {
+    cursor: pointer;
+  }
+  &.center {
+    text-align: center;
+  }
+  &.left {
+    text-align: left;
+  }
+  &.right {
+    text-align: right;
+  }
+  &.success {
+    color:$success-alert-text-color;
+    background-color: $success-alert-bg-color;
+    border-color: $success-alert-border-color;
+    p,
+    b {
+      color: $success-alert-text-color;
+    }
+    b {
+      color:$green-font-color;
+    }
+    b:hover {
+      color: $secondary-text-color;
+    }
+  }
+  &.info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    p,
+    b {
+      color: #31708f;
+    }
+    b {
+      color:$green-font-color;
+    }
+    b:hover {
+      color: $secondary-text-color;
+    }
+  }
+  &.error{
+    color: $error-alert-text-color;
+    background-color: $error-alert-bg-color;
+    border-color: $error-alert-border-color;
+    font-size: 15px;
+    font-family: Ubuntu, sans-serif;
+  }
+}

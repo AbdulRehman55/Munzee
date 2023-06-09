@@ -1,0 +1,44 @@
+@import "../../utils/styles/theme_colors";
+
+#statzee-munzee-page{
+  @include content-wrapper;
+  display: flex;
+  flex-direction: column;
+  .page-title{
+    padding: 40px 0;
+  }
+  .MuiBox-root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    p{
+      font-style: italic;
+      font-family: Ubuntu,sans-serif;
+      &:first-child{
+        color: $secondary-text-color;
+        font-weight: 400;
+        font-size: 24px;
+        span{
+          color: $statzee-maintext-color;
+          font-family: Alegerya,serif;
+          font-size: 2em;
+        }
+      }
+      &:last-child{
+        color: $statzee-subtext-color;
+        text-align: center;
+        font-weight: 400;
+        font-style: italic;
+        margin-bottom: 40px;
+        font-size: 17px;
+        span{
+          font-family: Alegerya,serif;
+          font-size: 1.6em;
+          color: $statzee-subtext-color;
+        }
+      }
+    }
+  }
+}

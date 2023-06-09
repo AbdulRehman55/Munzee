@@ -1,0 +1,76 @@
+@import "../../utils/styles/theme_colors";
+
+////////////////////////////////////
+//////* ARCHIVED ITEM STYLES *//////
+////////////////////////////////////
+
+#archived-page{
+  @include content-wrapper;
+  padding: 36px 0 96px 0;
+  .btns-wrapper{
+    @include pagination-btns-wrapper;
+  }
+  .never-captured{
+    font-weight: 600;
+    font-style: italic;
+    text-transform: capitalize;
+  }
+}
+
+.archived-item{
+  display: grid;
+  grid-template-columns: 20% 20% 50% 10%;
+  width: 100%;
+  background-color: $feed-item-bg;
+  border-radius: 4px;
+  margin: 20px 0;
+  overflow: hidden;
+  padding: 12px 0;
+  position: relative;
+  img{
+    width: 64px;
+    height: 64px;
+  }
+  .last-captured{
+    display: flex;
+    align-items: center;
+    img{
+      background: $primary-font-color;
+    }
+    p{
+      margin: 0 15px;
+    }
+  }
+  .details{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  a{
+    color: $green-font-color;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .title{
+    display: flex;
+    align-items: center;
+  }
+  .points-block{
+    background-color: $card-desc-background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-family: Ubuntu, sans-serif;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 70px;
+    span{
+      color: $primary-font-color;
+    }
+  }
+}

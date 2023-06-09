@@ -1,0 +1,40 @@
+@import "../../../utils/styles/theme_colors";
+
+#not-found-page{
+  .not-found-page-wrapper{
+    background: url("../../../assets/images/mine.jpeg") bottom/cover no-repeat;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 662px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  h4{
+    font-family: Ubuntu,sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: italic;
+    color: $primary-font-color;
+    margin: 20px 0 10px 0;
+  }
+  p{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: $primary-font-color;
+    font-weight: 500;
+    margin: 0;
+    a{
+      text-decoration: none;
+      color: $green-font-color;
+      transition: .2s linear;
+      &:hover{
+        color: $light-green-color;
+        transition: .2s linear;
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+@import '../../utils/styles/theme_colors';
+.download-page-container {
+  .banner {
+    background: url(../../assets/images/download-bg.png);
+    min-height: 200px;
+    .box {
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+      text-align: center;
+    }
+    .box1 {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .app-bg {
+      width: 280px;
+      margin: 0px 120px;
+    }
+    h2 {
+      font-size: 30px;
+      font-style: italic;
+      font-weight: 200;
+      line-height: 1.1;
+    }
+    h1 {
+      font-size: 36px;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.1;
+      margin: 12px 10px 10px;
+    }
+    .app-links {
+      img {
+        display: block;
+        margin-top: 30px;
+      }
+      .app-store-img {
+        width: 300px;
+      }
+      .google-store-img {
+        width: 320px;
+        margin-left: -10px;
+        margin-top: 20px;
+      }
+    }
+  }
+  .testimonials-header {
+    background-color: #333333;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 15px;
+    h3 {
+      color: $primary-font-color;
+      text-align: center;
+      font-weight: 500;
+      font-style: italic;
+      text-shadow: 1px 2px 3px $secondary-text-color;
+      font-size: 24px;
+    }
+  }
+  .testimonial-container {
+    margin: 30px auto 0px;
+    padding-bottom: 60px;
+  }
+  .testimonial-body {
+    padding-left: 50px;
+    .MuiAvatar-root {
+      width: 64px;
+      height: 64px;
+    }
+    .right-testimonial {
+      display: flex;
+      text-align: right;
+      padding-bottom: 50px;
+      .message-box {
+        padding: 20px 80px 10px 200px;
+      }
+    }
+    .left-testimonial {
+      display: flex;
+      padding-bottom: 50px;
+      .message-box {
+        padding: 20px 250px 10px 30px;
+      }
+    }
+    .message-box {
+      p {
+        color: $secondary-text-color;
+        text-shadow: none;
+        font-style: italic;
+        font-family: Ubuntu;
+        font-size: 18px;
+      }
+      .username {
+        display: flex;
+        align-items: center;
+        p {
+          color: $green-font-color !important;
+          font-style: normal;
+          font-size: 14px;
+          font-weight: 500;
+          cursor: pointer;
+        }
+        p:hover {
+          color: $secondary-text-color !important;
+        }
+        .line {
+          background-color: $grey;
+          width: 16px;
+          padding: 0.5px;
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+}
